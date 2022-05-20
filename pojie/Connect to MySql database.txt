@@ -1,9 +1,0 @@
-Connect to MySql database
-database/database_settings.asp
-
-strDatabaseType = "mySQL"	'MySQL 4.1 or MySQL 5.x
-
-strSQLServerName = "148.72.232.170" 'Holds the name of the SQL Server (This is the name/location or IP address of the SQL Server)
-strSQLDBUserName = "forumolsg" 'Holds the user name (for SQL Server Authentication)
-strSQLDBPassword = "Jili045705#" 'Holds the password (for SQL Server Authentication)
-strSQLDBName = "forumolsg"
