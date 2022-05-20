@@ -39,9 +39,9 @@ strDbPathAndName = Server.MapPath("databasewwForum.mdb")  'This is the path of t
 'Enter the details of your Microsoft SQL Server or MySQL Server and database below
 '*********************************************************************************
 
-strSQLServerName = "148.72.232.170" 'Holds the name of the SQL Server (This is the name/location or IP address of the SQL Server)
+strSQLServerName = "********" 'Holds the name of the SQL Server (This is the name/location or IP address of the SQL Server)
 strSQLDBUserName = "forumolsg" 'Holds the user name (for SQL Server Authentication)
-strSQLDBPassword = "Jili045705#" 'Holds the password (for SQL Server Authentication)
+strSQLDBPassword = "********" 'Holds the password (for SQL Server Authentication)
 strSQLDBName = "forumolsg"
 
 '*** Advanced Paging - Performance Boost ***
