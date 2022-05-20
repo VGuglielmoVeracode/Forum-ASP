@@ -1,0 +1,10 @@
+修改数据库
+tblSetupOptions 表单
+A_code   False
+Install_ID  GoldWeb
+L_code   False
+
+这三个文件会联络开发商拿注册码然后重设上面三个值，要删除或改名字禁止访问运行。
+admin_license.asp
+admin_server_test.asp
+admin_update_check.asp

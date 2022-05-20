@@ -1,0 +1,50 @@
+body{
+	background-color: #FFFFFF;
+	margin: 5px;
+}
+
+.text, a, a:hover, a:visited:hover, a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color : #000000;
+	font-size: 13px;
+	font-weight: normal;
+}
+a  {
+	color : #0000FF;
+	text-decoration: underline;
+}
+
+a:hover, a:visited:hover {
+	color : #FF0000;
+	text-decoration: underline;
+}
+
+a:visited {
+	color : #990099;
+	text-decoration: underline;
+}
+
+/* BBcode blocks */
+.BBquote{
+	border: 1px dotted #999999;
+	background-color: #FFFFFF;
+	width: 100%;
+	padding: 5px;
+	margin: 8px 0px;
+	text-align: left;
+	overflow: auto;
+	display: block;
+	padding: 5px;
+}
+
+.BBcode{
+	font-family: Courier New, Courier, mono;
+	border: 1px dashed #999999;
+	width: 100%;
+	padding: 5px;
+	margin: 8px 0px;
+	text-align: left;
+	overflow: auto;
+	display: block;
+	padding: 5px;
+}

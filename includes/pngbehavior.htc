@@ -1,0 +1,36 @@
+<public:component>
+<public:attach event="onpropertychange" onevent="fixPNG()" />
+<script type="text/javascript">
+
+var IEbrowser = /MSIE (5\.5|6\.)/.test(navigator.userAgent) && navigator.platform == 'Win32';
+
+function fixPNG() {
+
+	//exit if not IE5.5 or 6 on win32
+	if (!IEbrowser) return;
+
+   	// get image
+   	var src = element.src;
+   	
+   	// if PNG then run filter
+   	if ( /\.png$/.test(src.toLowerCase())) {
+   		// set auto sizing
+   		if (currentStyle.width == 'auto' && currentStyle.height == 'auto') {
+   			style.height = offsetHeight + 'px';
+   			style.width = offsetWidth + 'px';
+   		}
+      		// set filter
+      		element.runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + src + '", sizingMethod="scale")';
+   		// set blank image
+      		element.src = 'forum_images/blank.gif';
+   	}
+   	else {
+      		// remove filter
+      		element.runtimeStyle.filter = '';
+   }
+}
+
+if (IEbrowser) fixPNG();
+
+</script>
+</public:component>

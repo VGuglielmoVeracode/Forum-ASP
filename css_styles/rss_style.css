@@ -1,0 +1,117 @@
+/* *******************************************************
+Software: Web Wiz Forums
+Info: http://www.webwizforums.com
+Copyright: ©2001-2008 Web Wiz. All rights reserved
+******************************************************* */
+
+body{
+	background-color: #EEEEEE;
+	margin: 5px;
+}
+
+.rssContainer{
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+	margin: 5px;
+	padding: 10px;
+	width: 99%;
+	text-align: left;
+	table-layout: fixed;
+}
+
+.subscribeBlock{
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+	margin: 5px;
+	padding: 5px;
+	width: 370px;
+	float: right;
+}
+
+a img,:link img,:visited img{
+	border:none;
+}
+
+.rssTitle, .bannerBlock, .rssHeading, .rssLink {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.bannerBlock, .headerBlock, .contentBlock {
+	border-bottom:1px solid #999999;
+	
+}
+
+hr {
+	height: 0px; 
+	border: solid #999999 0px; 
+	border-top-width: 1px;
+}
+
+.RSSbullet{
+	list-style-image: url(../forum_images/bullet.gif);
+}
+
+.itemcontent{
+	list-style-image: none;
+}
+
+.rssTitle a:link, .rssTitle a:visited, .rssTitle a:hover, .rssTitle a:visited:hover {
+	color: #727FBD;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 101%;
+	letter-spacing: -.5px;
+}
+
+.bannerBlock {
+	color: #999999;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.headerBlock, .contentBlock, .rssCopy, .rssPostedDate {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.headerBlock {
+	color: #666666;
+}
+
+.rssHeading {
+	color:#999999;
+	text-decoration:none;
+	font-weight: bold;
+	font-size: 25px;
+	line-height:101%;
+	letter-spacing:-.5px;
+}
+
+.rssCopy {
+	font-size: 10px;
+}
+
+.rssPostedDate {
+	color: #666666;
+	font-size: 10px;
+}
+
+a.rssLink, a.rssLink:visited, a.rssLink:hover, a.rssLink:visited:hover {
+	color: #000099;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+a.rssLink:hover, a.rssLink:visited:hover{
+	text-decoration : underline;
+}
+
+.rssButton {
+	padding-left:3px;
+	padding-right:3px;
+	padding-bottom:3px;
+}

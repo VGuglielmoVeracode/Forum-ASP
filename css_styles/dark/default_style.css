@@ -1,0 +1,639 @@
+/* *******************************************************
+Software: Web Wiz Forums
+Info: http://www.webwizforums.com
+Copyright: ©2001-2011 Web Wiz. All rights reserved
+******************************************************* */
+
+/* Page body */
+body{
+	background-color: #000000;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+}
+
+/* Text for most CSS classes */
+body, .text, .smText, .error, a, a.smLink, a.msgLink, a.tLink, .WebWizRTEtextarea, .basicTable, .errorTable, .tableRow, .tableTopRow, .tableBottomRow, .evenTableRow, .oddTableRow, .hiddenTableRow, .PMtableRow, .PMmsgBody, .msgBody, .msgEvenTableRow, .msgOddTableRow, .msgAnswerTableRow, .msgHiddenTableRow, .msgOddTableSide, .msgEvenTableSide, .msgSignature, .calDateCell, .calTodayCell, .BBquote, .BBcode, .ChatTableRow, .ChatRoomBox, .ChatMembersBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color : #CFCFCF;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1.4;
+}
+.lgText, h1, .largeButton, .msgSideProfile, .tableLedger, .tableSubLedger, .tableSearchLedger, .calLedger{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CFCFCF;
+	font-weight: bold;
+}
+
+/* Text */
+.smText{
+	font-size: 10px;
+	line-height: 12px; 
+}
+
+.lgText{
+	font-size: 15px;
+}
+
+h1{
+	font-size: 19px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.error{
+	color : #FF0000;
+}
+
+/* Search highlight */
+.highlight{
+	background-color: #990000
+}
+
+/* Hyperlinks */
+a:link {
+	color : #ff8400;
+	text-decoration: none;
+}
+
+a:visited{
+	color : #ff8400;
+	text-decoration : none;
+}
+
+a:hover, a:visited:hover{
+	color : #fd924c;
+	text-decoration : underline;
+}
+
+a.smLink {
+	font-size: 10px;
+}
+
+
+/* Page Links */
+.pageLink, a.pageLink:link, a.pageLink:visited, a.smPageLink:link, a.smPageLink:visited{
+	color : #CFCFCF;
+	text-decoration: none;
+	background: #2B2B2B;
+	border: 1px solid #666666;
+	padding: 2px;
+	margin: 2px;	
+}
+
+a.smPageLink:link, a.smPageLink:visited{
+	line-height: 30px;
+	padding: 1px;
+	margin: 1px;	
+}
+
+a.pageLink:hover, a.smPageLink:hover{
+	text-decoration: underline;
+	border: 1px solid #AAAAAA;
+	background: #000000;
+}
+
+.pageLink{
+	background: #2B2B2B;
+	border: 1px solid #AAAAAA;
+}
+
+
+
+/* Misc */
+ul{
+	list-style-type: circle;
+}
+
+form{
+	display: inline;
+}
+
+a img,:link img,:visited img{
+	border: none;
+	vertical-align: middle;
+}
+
+.imgBorder {
+	border: #666666 1px solid;
+}
+
+.avatar, #avatar{
+	width: 64px;
+	height: 64px;
+	border: 1px solid #000000;
+	margin: 2px;
+}
+
+hr {
+	width: 100%;
+	background-color: #FFFFFF;
+	height: 1px;
+	border: 0px;
+}
+
+/* PNG Support for IE5.5 & 6 */
+img {
+   behavior: url('includes/pngbehavior.htc');
+}
+
+/* Rich Text Editor */
+.RTEtoolbar{
+ 	background-color: #DDDDDD;
+ 
+}
+
+.WebWizRTEbutton, .RTEtoolbar{
+	background-color: #DDDDDD;
+	border: 1px solid #DDDDDD;
+	
+}
+
+.WebWizRTEbuttonOver{
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+}
+
+.RTEtableTopRow{
+	line-height: 22px;
+	background-color: #000000;
+}
+
+.RTEtableRow{
+	background-color: #2B2B2B;
+}
+
+.RTEtableBottomRow{
+	background-color: #000000;
+}
+
+.WebWizRTEtextarea{
+	background-color: #000000;
+	color: #CFCFCF;
+	margin: 2px;
+	background-image:none;
+}
+
+.RTEtextarea{
+	background-color: #000000;
+	color: #CFCFCF;
+	margin: 2px;
+}
+
+.RTEmouseOver{
+	background-color: #909090;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+
+/* Tables */
+.basicTable{
+	text-align: left;
+	border: 0px;
+	width: 98%;
+}
+
+.errorTable{
+	text-align: left;
+	border: 1px solid #FF6600;
+	background-color: #990000;
+	width: 98%;
+	color: #FFFFFF;
+}
+
+.tableBorder{
+	text-align: left;
+	border: 1px solid #000000;
+	background-color: #373737;
+	width: 98%;
+}
+
+/* Table Ledger */
+.tableLedger{
+	font-weight: bold;
+	color: #CFCFCF;
+	background-color: #000000;
+	line-height: 22px;
+}
+
+.tableLedger a:link, .tableLedger a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	color : #CFCFCF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.tableLedger a:hover, .tableLedger a:visited:hover{
+	color : #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Search Sub-Ledger */
+.tableSubLedger{
+	font-weight: bold;
+	color: #CFCFCF;
+	background-color: #232323;
+	height: 19px;
+}
+
+.tableSubLedger a:link, .tableSubLedger a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	color : #CFCFCF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.tableSubLedger a:hover, .tableSubLedger a:visited:hover{
+	color : #FFFFFF;
+	text-decoration : underline;
+	font-weight: bold;
+}
+
+/* Search Ledger */
+.tableSearchLedger{
+	font-weight: bold;
+	background-color: #232323;
+}
+
+.tableSearchLedger a:link, .tableSearchLedger a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	color : #CFCFCF;
+	text-decoration: none;
+}
+
+.tableSearchLedger a:hover, .tableSearchLedger a:visited:hover{
+	color : #FFFFFF;
+	text-decoration : underline;
+}
+
+
+/* Table Status Bar */
+.tableStatusBar{
+	font-weight: normal;
+	color: #CFCFCF;
+	font-size: 11px;
+	background-color: #2B2B2B;
+}
+
+.tableStatusBar a:link, .tableStatusBar a:visited{
+	color : #CFCFCF;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.tableStatusBar a:hover, .tableStatusBar a:visited:hover{
+	color : #CFCFCF;
+	font-size: 11px;
+	text-decoration : underline;
+}
+
+
+/* Tables */
+.tableRow{
+	background-color: #2B2B2B;
+}
+
+.tableTopRow, .tableBottomRow{
+	background-color: #000000;
+}
+
+
+
+/* Alternating Row Colours */
+.evenTableRow{
+	background-color: #2B2B2B;
+
+}
+
+.oddTableRow{
+	background-color: #2B2B2B;
+}
+
+.hiddenTableRow{
+	background-color: #666666;
+}
+
+/* Private messenger */
+.PMtableRow{
+	background-color: #2B2B2B;
+}
+
+.PMmsgBody{
+	width: 99%;
+	max-height: 450px;
+	float: left; 
+	overflow: auto;
+}
+
+a.PMsmLink:link, a.PMsmLink:visited, a.fileManLink:link, a.fileManLink:visited{
+	color : #CFCFCF;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a.PMsmLink:hover, a.PMsmLink:visited:hover, a.fileManLink:hover, a.fileManLink:visited:hover{
+	color : #CFCFCF;
+	font-size: 11px;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+/* Forum posts and Blogs */
+.msgBody{
+	width: 100%;
+	margin: 2px;
+	float: left; 
+	overflow: auto;
+}
+
+.msgBody img, .PMmsgBody img {
+    max-width: 750px;
+    height: auto;
+}
+
+.msgEvenTableTop, .msgEvenTableSide, .blogEntryTableTop{
+	background-color: #2B2B2B;
+	font-size: 11px;
+}
+
+.msgOddTableTop, .msgOddTableSide{
+	background-color: #2B2B2B;
+	font-size: 11px;
+}
+
+.msgEvenTableRow, .blogEntryTableRow{
+	background-color: #2B2B2B;
+}
+
+.msgOddTableRow{
+	background-color: #2B2B2B;
+}
+
+.msgAnswerTableTop{
+	font-size: 11px;
+	background-color: #666666;
+}
+
+.msgEvenTableTop a:link, .msgEvenTableTop a:visited, .msgOddTableTop a:link, .msgOddTableTop a:visited, .postThanks, .postOptions, .msgAnswerTableTop a:link, .msgAnswerTableTop a:visited{
+	color : #CFCFCF;
+	text-decoration: none;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.msgEvenTableTop a:hover, .msgEvenTableTop a:visited:hover, .msgOddTableTop a:hover, .msgOddTableTop a:visited:hover, .msgAnswerTableTop a:hover, .msgAnswerTableTop a:visited:hover{
+	color : #CFCFCF;
+	text-decoration: underline;
+	font-size: 11px;
+}
+
+.msgSideProfile{
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.msgHiddenTableRow{
+	font-size: 10px;
+	background-image: url(../../forum_images/pre_approved_post_dark.gif);
+}
+
+.msgLineDevider{
+	border: solid #373737 0px;
+	border-top-width: 1px;
+}
+
+.msgSignature{
+	max-height: 160px;
+	width: 100%;
+	float: left; 
+	overflow: auto;
+}
+
+.postSeparatorTableRow{
+	height: 10px;
+	background-color: #000000;
+
+}
+
+/* Calendar */
+.calLedger{
+	font-weight: bold;
+	background-color: #232323;
+	padding:4px;
+}
+.calLedger a:link, .calLedger a:visited{
+	color : #EAEAEA;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.calLedger a:hover, .calLedger a:visited:hover{
+	color : #FFFFFF;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.calDateCell{
+	background-color: #2B2B2B;
+}
+
+.calTodayCell{
+	background-color: #2B2B2B;
+	border:1px solid #CC0000;
+}
+
+.calEmptyDateCell{
+	background-color: #000000;
+}
+
+/* BBcode blocks */
+.BBquote{
+	border: 1px dotted #373737;
+	background-color: #000000;
+	width: 99.5%;
+	padding: 5px;
+	margin: 8px 0px;
+	text-align: left;
+	overflow: auto;
+	display: block;
+	padding: 5px;
+}
+
+.BBcode{
+	font-family: Courier New, Courier, mono;
+	border: 1px dashed #373737;
+	width: 99.5%;
+	padding: 5px;
+	margin: 8px 0px;
+	text-align: left;
+	overflow: auto;
+	display: block;
+	padding: 5px;
+}
+
+
+/* Tabs and Buttons */
+.largeButton, a.largeButton:link, a.largeButton:visited{
+	float: left;
+	color : #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+	background-image: url('../../forum_images/large_black_button.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 96px;
+	padding: 5px 0px;
+	margin: 2px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+
+.largeButton:hover, a.largeButton:hover, a.largeButton:visited:hover{
+	background-position: 0px -28px;
+	color : #CC0000;
+	font-weight: bold;
+}
+
+.tabTable{
+	border: solid #373737 0px;
+	border-bottom-width: 1px;
+}
+
+
+a.tabButton:link, a.tabButton:visited, a.tabButtonActive:link, a.tabButtonActive:visited{
+	float: left;
+	color : #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+	background-image: url('../../forum_images/large_black_tab.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 130px;
+	padding: 5px 0px;
+	margin: 0px 1px;
+	
+}
+
+a.tabButtonActive:link, a.tabButtonActive:visited{
+	background-position: 0px -61px;
+	color : #000000;
+}
+
+a.tabButton:hover, a.tabButton:visited:hover, a.tabButtonActive:hover, a.tabButtonActive:visited:hover{
+	background-position: 0px -30px;
+	color : #CC0000;
+}
+
+.topicIcon, .forumIcon{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 35px;
+}
+
+
+
+/* Drop Down Menus */
+.dropDownMenu, .dropDownStatusBar, .dropDownSearch, .dropDownTopicRating, .dropDownCalendar, .dropDownTopicSearch, .dropDownPermissions, .dropDownTopicShare{
+	visibility: hidden; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px;
+	z-index:10;
+}
+
+.dropDownMenu, .dropDownStatusBar, .dropDownPermissions, .dropDownTopicShare{
+	background-color: #666666;
+	border: solid #373737;
+	border-width: 1px;
+	height: auto;
+	line-height: 18px;
+	padding: 1px;
+}
+
+.downDropParent, .dropDownPermissions, .dropDownTopicShare, .dropDownMenu a:link, .dropDownMenu a:visited, .dropDownStatusBar a{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CFCFCF;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.dropDownMenu a:hover, .dropDownMenu a:visited:hover, .dropDownStatusBar a:hover {
+	color : #000000;
+	display: block;
+	background: #CCCCCC;
+	width: 100%;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.dropDownSearch, .dropDownTopicSearch, .dropDownTopicRating{
+	background-color: #666666;
+	border: solid #373737;
+	border-width: 1px;
+	padding: 0px;
+}
+
+.dropDownTopicRating{
+	height: 110px;
+}
+
+.dropDownSearch{
+	height: 100px;
+}
+
+.dropDownTopicSearch{
+	height: 80px;
+}
+
+.dropDownPermissions, .dropDownTopicShare{
+	color: #CFCFCF;
+	line-height: 14px;
+	text-align: left;
+}
+
+.dropDownPointer, .postThanks, .postOptions{
+	cursor: pointer;
+}
+
+/* Chat Room */
+.ChatTableRow{
+	background-color: #2B2B2B;
+}
+
+.ChatRoomBox, .ChatMembersBox{
+	width: 99%;
+	height: 325px;
+	float: left; 
+	overflow: auto;
+}
+
+.chatAlert {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.chatMessage{
+	color: #ff8400;
+	font-weight: bold;
+}
+
+.chatMember{
+	color: #AFAFAF;
+	font-weight: bold;
+}
+
+.chatListMember{
+	color: #CFCFCF;
+	font-weight: bold;
+	
+}
